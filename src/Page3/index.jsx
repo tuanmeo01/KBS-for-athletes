@@ -20,7 +20,7 @@ const Page3 = () => {
   return (
     <>
       {onClickSubmit ? (
-        <MenuPlan3 />
+        <MenuPlan3 height={height} weight={weight} />
       ) : (
         <ContainPage3>
           <h2>Người mới bắt đầu</h2>

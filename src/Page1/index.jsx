@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Input } from "antd";
 import "antd/lib/input/Input";
 import "antd/lib/radio/radio";
-import MenuPlan1 from "./MenuPlan1";
+import MenuPlan1 from "./MenuPlan1/index";
 import { Radio } from "antd";
 
 const Page1 = () => {
@@ -20,13 +20,13 @@ const Page1 = () => {
   return (
     <>
       {onClickSubmit ? (
-        <MenuPlan1 />
+        <MenuPlan1 height={height} weight={weight} />
       ) : (
         <ContainPage1>
           <h2>Người mới bắt đầu</h2>
           <ContainOption>
             <Option>
-              Chiều cao
+              Chiều cao(cm)
               <Input
                 placeholder="Nhập chiều cao"
                 onChange={(e) => setHeight(e.target.value)}
@@ -34,7 +34,7 @@ const Page1 = () => {
               />
             </Option>
             <Option>
-              Cân nặng
+              Cân nặng(kg)
               <Input
                 placeholder="Nhập cân nặng"
                 onChange={(e) => setWeight(e.target.value)}
