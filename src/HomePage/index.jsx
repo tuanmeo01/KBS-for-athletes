@@ -9,11 +9,11 @@ const HomePage = () => {
   return (
     <>
       {clickType === "1" ? (
-        <Page1 />
+        <Page1 setClickType={setClickType} />
       ) : clickType === "2" ? (
-        <Page2 />
+        <Page2 setClickType={setClickType} />
       ) : clickType === "3" ? (
-        <Page3 />
+        <Page3 setClickType={setClickType} />
       ) : (
         <ContainHomePage>
           <h2

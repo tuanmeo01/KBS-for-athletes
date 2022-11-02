@@ -5,8 +5,9 @@ import "antd/lib/input/Input";
 import "antd/lib/radio/radio";
 import MenuPlan1 from "./MenuPlan1/index";
 import { Radio } from "antd";
+import Icon_back from "../Asset/arrow-narrow-left.svg";
 
-const Page1 = () => {
+const Page1 = (props: any) => {
   const [onClickSubmit, setOnClickSubmit] = useState(false);
   const [height, setHeight] = useState("");
   const [weight, setWeight] = useState("");
@@ -20,9 +21,19 @@ const Page1 = () => {
   return (
     <>
       {onClickSubmit ? (
-        <MenuPlan1 height={height} weight={weight} />
+        <MenuPlan1
+          height={height}
+          weight={weight}
+          setOnClickSubmit={setOnClickSubmit}
+        />
       ) : (
         <ContainPage1>
+          <img
+            style={{ cursor: "pointer" }}
+            src={Icon_back}
+            alt="backIcon"
+            onClick={() => props.setClickType("0")}
+          ></img>
           <h2>Người mới bắt đầu</h2>
           <ContainOption>
             <Option>
@@ -72,7 +83,7 @@ const Page1 = () => {
   );
 };
 const ContainPage1 = styled.div`
-  width: 100%;
+  padding: 50px 50px;
   h2 {
     text-align: center;
   }

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Plan1 from "../../Page1/MenuPlan1/Plan1/index";
-import Plan2 from "../../Page2/MenuPlan2/Plan2/index";
-import Plan3 from "../../Page3/MenuPlan3/Plan3/index";
+import Plan2Gay from "./Plan2Gay";
+import Plan2Normal from "./Plan2Normal";
+import Plan2Beo from "./Plan2Beo";
+import Icon_back from "../../Asset/arrow-narrow-left.svg";
 
 const MenuPlan2 = (props: any) => {
   const weight = props.weight;
@@ -15,13 +16,19 @@ const MenuPlan2 = (props: any) => {
   return (
     <>
       {plan1 ? (
-        <Plan1 />
+        <Plan2Gay />
       ) : plan2 ? (
-        <Plan2 />
+        <Plan2Normal />
       ) : plan3 ? (
-        <Plan3 />
+        <Plan2Beo />
       ) : (
         <ContainMenu>
+          <img
+            style={{ cursor: "pointer" }}
+            src={Icon_back}
+            alt="backIcon"
+            onClick={() => props.setOnClickSubmit(false)}
+          ></img>
           <Title>
             <h2>Chỉ số BMI hiện tại của bạn là: {BMI}</h2>
             {BMI <= 18.5 ? (

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Plan1 from "../../Page1/MenuPlan1/Plan1/index";
-import Plan2 from "../../Page2/MenuPlan2/Plan2/index";
-import Plan3 from "../../Page3/MenuPlan3/Plan3/index";
+import Plan3Gay from "./Plan3Gay";
+import Plan3Normal from "./Plan3Normal";
+import Plan3Beo from "./Plan3Beo";
+import Icon_back from "../../Asset/arrow-narrow-left.svg";
 
 const MenuPlan3 = (props: any) => {
   const weight = props.weight;
@@ -15,14 +16,20 @@ const MenuPlan3 = (props: any) => {
   return (
     <>
       {plan1 ? (
-        <Plan1 />
+        <Plan3Gay />
       ) : plan2 ? (
-        <Plan2 />
+        <Plan3Normal />
       ) : plan3 ? (
-        <Plan3 />
+        <Plan3Beo />
       ) : (
         <ContainMenu>
           <Title>
+            <img
+              style={{ cursor: "pointer" }}
+              src={Icon_back}
+              alt="backIcon"
+              onClick={() => props.setOnClickSubmit(false)}
+            ></img>
             <h2>Chỉ số BMI hiện tại của bạn là: {BMI}</h2>
             {BMI <= 18.5 ? (
               <>
@@ -31,7 +38,7 @@ const MenuPlan3 = (props: any) => {
                   <ul>
                     Phân tích từ cơ thể bạn:
                     <li>
-                      Lượng Carbohydrates cần thiết cho cơ thể bạn là :{" "}
+                      Lượng Carbohydrates cần thiết cho cơ thể bạn là :
                       {10 * weight}g 7-10g/kg/ngày
                     </li>
                     <li>
