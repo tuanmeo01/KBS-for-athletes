@@ -14,7 +14,7 @@ const Page1 = (props: any) => {
   const [sex, setSex] = useState("");
   const [age, setAge] = useState("");
   const [value, setValue] = useState("nam");
-
+  const [clickReturnInPlan1, setClickReturnInPlan1] = useState(false);
   const onChange = (e) => {
     setValue(e.target.value);
   };
