@@ -6,7 +6,6 @@ import Food2 from "./Food2";
 import Food3 from "./Food3";
 const DontTrainning = (props) => {
   const days = localStorage.getItem("days");
-  const food = `Food${days}`;
   const renderSwitch = (days) => {
     switch (days) {
       case "1":
