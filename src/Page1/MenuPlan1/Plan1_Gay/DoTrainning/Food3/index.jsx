@@ -2,6 +2,20 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Img1 from "../../../../../Asset/img.jpg";
 import "antd/dist/antd.css";
+import egg from "../../../../../Asset/egg.jpg";
+import muttao from "../../../../../Asset/muttao.jpg";
+import suaitbeo from "../../../../../Asset/suaitbeo.jpg";
+import saladga from "../../../../../Asset/saladga.jpg";
+import rauchanvit from "../../../../../Asset/rauchanvit.jpg";
+import ga from "../../../../../Asset/thitga.jpg";
+import dauden from "../../../../../Asset/dauden.jpg";
+import banhmi from "../../../../../Asset/ngucocngucoc.jpg";
+import phomai from "../../../../../Asset/cheese.jpg";
+import cahoi from "../../../../../Asset/philecahoi.jpg";
+import gaolut from "../../../../../Asset/gaolut.jpg";
+import dua from "../../../../../Asset/dua.jpg";
+import Food4 from "../Food4";
+
 import { Button, Checkbox } from "antd";
 const Food3 = () => {
   const [checked1, setChecked1] = useState(false);
@@ -33,11 +47,9 @@ const Food3 = () => {
   const label4 = `${checked4 ? "Đã hoàn thành" : "Chưa hoàn thành"}`;
   return (
     <>
-      {localStorage.setItem("days", "2")}
+      {localStorage.setItem("days", "3")}
       {finishDay3 ? (
-        {
-          /* <Food4 /> */
-        }
+        <Food4 />
       ) : (
         <div>
           <h2>Ngày 3</h2>
@@ -53,31 +65,28 @@ const Food3 = () => {
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={Img1}
+                    src={egg}
                     alt="food1"
                   />
                   <TitleContent>
-                    <div> mon an 1</div>
-                    <div> mota 1</div>
-                    <div> mota 1</div>
-                    <div> mota 1</div>
+                    <div>2 trứng</div>
                   </TitleContent>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={Img1}
+                    src={muttao}
                     alt="food1"
                   />
-                  <div> mon an 1</div>
+                  <div>2 thìa mứt táo</div>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={Img1}
+                    src={suaitbeo}
                     alt="food1"
                   />
-                  <div> mon an 1</div>
+                  <div> 1 cốc sữa ít béo</div>
                 </Content1>
               </ContainContent>
             </Morning>
@@ -92,31 +101,28 @@ const Food3 = () => {
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={Img1}
+                    src={saladga}
                     alt="food1"
                   />
                   <TitleContent>
-                    <div> mon an 1</div>
-                    <div> mota 1</div>
-                    <div> mota 1</div>
-                    <div> mota 1</div>
+                    <b> Salad gà</b>
                   </TitleContent>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={Img1}
+                    src={rauchanvit}
                     alt="food1"
                   />
-                  <div> mon an 1</div>
+                  <div>1 mớ rau chân vịt</div>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={Img1}
+                    src={ga}
                     alt="food1"
                   />
-                  <div> mon an 1</div>
+                  <div> 120g thịt gà nấu</div>
                 </Content1>
               </ContainContent>
             </Morning>
@@ -131,31 +137,28 @@ const Food3 = () => {
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={Img1}
+                    src={dauden}
                     alt="food1"
                   />
                   <TitleContent>
-                    <div> mon an 1</div>
-                    <div> mota 1</div>
-                    <div> mota 1</div>
-                    <div> mota 1</div>
+                    <div> 1/4 bát đậu đen</div>
                   </TitleContent>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={Img1}
+                    src={banhmi}
                     alt="food1"
                   />
-                  <div> mon an 1</div>
+                  <div> 2 bánh lúa mì nguyên cám</div>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={Img1}
+                    src={phomai}
                     alt="food1"
                   />
-                  <div> mon an 1</div>
+                  <div>2 muỗng phô mai ít béo</div>
                 </Content1>
               </ContainContent>
             </Morning>
@@ -170,31 +173,28 @@ const Food3 = () => {
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={Img1}
+                    src={cahoi}
                     alt="food1"
                   />
                   <TitleContent>
-                    <div> mon an 1</div>
-                    <div> mota 1</div>
-                    <div> mota 1</div>
-                    <div> mota 1</div>
+                    <div> 130g cá hồi phi lê</div>
                   </TitleContent>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={Img1}
+                    src={gaolut}
                     alt="food1"
                   />
-                  <div> mon an 1</div>
+                  <div>1/2 bát gạo lức</div>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={Img1}
+                    src={dua}
                     alt="food1"
                   />
-                  <div> mon an 1</div>
+                  <div>4 lát dứa</div>
                 </Content1>
               </ContainContent>
             </Morning>

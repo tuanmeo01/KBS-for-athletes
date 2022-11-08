@@ -5,7 +5,7 @@ import Plan1Normal from "./Plan1_binh_thuong";
 import Plan1Beo from "./Plan1_beo";
 import Icon_back from "../../Asset/arrow-narrow-left.svg";
 
-const MenuPlan1 = (props: any) => {
+const MenuPlan1 = (props) => {
   const weight = props.weight;
   const height = props.height / 100;
   const BMI = Math.round((weight / (height * height)) * 100) / 100;
@@ -33,17 +33,20 @@ const MenuPlan1 = (props: any) => {
             <h2>Chỉ số BMI hiện tại của bạn là: {BMI}</h2>
             {BMI <= 18.5 ? ( //gay
               <>
-                <div>Gay</div>
+                <div>
+                  Theo như chiều cao và cân nặng của bạn, chúng tôi đã tính ra
+                  được BMI của bạn là {BMI}, bạn đang ở mức độ gầy
+                </div>
                 <Suggest>
                   <ul>
                     Phân tích từ cơ thể bạn:
                     <li>
                       Lượng Carbohydrates cần thiết cho cơ thể bạn là :{" "}
-                      {7 * weight}g 7-10g/kg/ngày
+                      {10 * weight}g 7-10g/kg/ngày
                     </li>
                     <li>
-                      Lượng Protein cần thiết cho cơ thể bạn là : {1.2 * weight}
-                      g 1.2-2g/kg/ngày
+                      Lượng Protein cần thiết cho cơ thể bạn là : {2 * weight}g
+                      1.2-2g/kg/ngày
                     </li>
                     <li>
                       Lượng chất béo (Fats) cần thiết cho cơ thể bạn là :
@@ -54,11 +57,24 @@ const MenuPlan1 = (props: any) => {
                       lượng nước do việc dổ mồ hôi, nên bạn cần bổ sung đủ 4-6
                       ounces mỗi 15p tập luyện.
                     </li>
-                    Lời khuyên dành cho bạn
-                    <li>loiwf khuyen 1</li>
-                    <li>loiwf khuyen 1</li>
-                    <li>loiwf khuyen 1</li>
-                    <li>loiwf khuyen 1</li>
+                    Lời khuyên của chúng tôi dành cho bạn
+                    <li>
+                      Thể trạng của bạn là gầy, bạn cần bổ sung nhiều protetin,
+                      đạm, carb, chất béo...
+                    </li>
+                    <li>
+                      Năng lượng bạn nạp vào trong ngày phải gấp 1,5 lần năng
+                      lượng mà bạn tiêu thụ
+                    </li>
+                    <li>
+                      Cần lựa chọn những thực phẩm lành mạnh, tốt cho sức khỏe
+                    </li>
+                    <li>Chia tỉ lệ dinh dưỡng phù hợp</li>
+                    <li>Ăn ngủ đủ giấc, tránh việc thức khuya</li>
+                    <li>
+                      Bổ sung tinh bột từ các loại ngũ cốc, ăn các loại thịt đỏ
+                      như bò, lợn , dê..., ăn nhiều rau xanh
+                    </li>
                   </ul>
                 </Suggest>
                 <BtnFood
@@ -71,7 +87,9 @@ const MenuPlan1 = (props: any) => {
               </>
             ) : BMI >= 30 ? ( //beo
               <>
-                <div>Beo</div>
+                <div>
+                  Theo chỉ số BMI của bạn là {BMI} thì bạn đang ở mức gầy
+                </div>
                 <Suggest>
                   <ul>
                     Phân tích từ cơ thể bạn:
@@ -92,11 +110,18 @@ const MenuPlan1 = (props: any) => {
                       lượng nước do việc dổ mồ hôi, nên bạn cần bổ sung đủ 4-6
                       ounces mỗi 15p tập luyện.
                     </li>
-                    Lời khuyên dành cho bạn
-                    <li>loiwf khuyen 1</li>
-                    <li>loiwf khuyen 1</li>
-                    <li>loiwf khuyen 1</li>
-                    <li>loiwf khuyen 1</li>
+                    Lời khuyên của chúng tôi dành cho bạn
+                    <li>
+                      Theo chỉ số BMI thì hiện bạn đang có thể trạng người béo,
+                      bạn cần tăng cường luyện tập nhiều hơn, tránh ăn những đồ
+                      ăn nhiều dầu mỡ
+                    </li>
+                    <li>
+                      Nạp năng lượng vừa đủ để có thể tập luyện và sinh hoạt
+                    </li>
+                    <li>Tránh ăn vặt </li>
+                    <li>Ăn nhiều rau xanh</li>
+                    <li>Hạn chế sử dụng bia rượu và thức khuya</li>
                   </ul>
                 </Suggest>
                 <BtnFood
@@ -110,16 +135,19 @@ const MenuPlan1 = (props: any) => {
             ) : (
               //binh thuong
               <>
-                <div>Binh thuong</div>
+                <div>
+                  Theo chỉ số BMI dựa trên chiều cao và cân nặng của bạn {BMI}{" "}
+                  thì bạn đang có thể trạng bình thường
+                </div>
                 <Suggest>
                   <ul>
                     Phân tích từ cơ thể bạn:
                     <li>
                       Lượng Carbohydrates cần thiết cho cơ thể bạn là :{" "}
-                      {7 * weight}g 7-10g/kg/ngày
+                      {8 * weight}g 7-10g/kg/ngày
                     </li>
                     <li>
-                      Lượng Protein cần thiết cho cơ thể bạn là : {1.2 * weight}
+                      Lượng Protein cần thiết cho cơ thể bạn là : {1.7 * weight}
                       g 1.2-2g/kg/ngày
                     </li>
                     <li>
@@ -131,11 +159,22 @@ const MenuPlan1 = (props: any) => {
                       lượng nước do việc dổ mồ hôi, nên bạn cần bổ sung đủ 4-6
                       ounces mỗi 15p tập luyện.
                     </li>
-                    Lời khuyên dành cho bạn
-                    <li>loiwf khuyen 1</li>
-                    <li>loiwf khuyen 1</li>
-                    <li>loiwf khuyen 1</li>
-                    <li>loiwf khuyen 1</li>
+                    Lời khuyên của chúng tôi dành cho bạn
+                    <li>
+                      Bạn đang có thân hình cân đối, rất nhiều người mơ ước
+                    </li>
+                    <li>
+                      Bạn cần duy trì thói quen ăn uống và sinh hoạt như hiện
+                      tại
+                    </li>
+                    <li>
+                      Bổ sung đầy đủ chất dinh dưỡng và năng lượng để có 1 ngày
+                      tập luyện đầy năng lượng
+                    </li>
+                    <li>
+                      Tránh sử dụng các chất kích thích như rượu bia, thuốc
+                      lá....
+                    </li>
                   </ul>
                 </Suggest>
                 <BtnFood
