@@ -15,7 +15,7 @@ import sua from "../../../../../Asset/suaitbeo.jpg";
 
 import "antd/dist/antd.css";
 import { Button, Checkbox } from "antd";
-import Food2 from "../Food2";
+import Food8 from "../Food8";
 const Food7 = () => {
   const [checked1, setChecked1] = useState(false);
   const [checked2, setChecked2] = useState(false);
@@ -48,7 +48,7 @@ const Food7 = () => {
     <>
       {localStorage.setItem("days", "7")}
       {finishDay1 ? (
-        <Food2 />
+        <Food8 />
       ) : (
         <div>
           <h2>Ngày 7</h2>

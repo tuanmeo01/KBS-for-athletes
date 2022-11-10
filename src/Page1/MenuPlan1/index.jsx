@@ -88,7 +88,7 @@ const MenuPlan1 = (props) => {
             ) : BMI >= 30 ? ( //beo
               <>
                 <div>
-                  Theo chỉ số BMI của bạn là {BMI} thì bạn đang ở mức gầy
+                  Theo chỉ số BMI của bạn là {BMI} thì bạn đang ở mức béo
                 </div>
                 <Suggest>
                   <ul>

@@ -1,6 +1,19 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Img1 from "../../../../../Asset/img.jpg";
+import ngucoc from "../../../../../Asset/ngucocngucoc.jpg";
+import suaitbeo from "../../../../../Asset/suaitbeo.jpg";
+import suangucoc from "../../../../../Asset/yenmachyenmach.jpg";
+import vietquat from "../../../../../Asset/vietquat.jpg";
+import phomat from "../../../../../Asset/cheese.jpg";
+import matong from "../../../../../Asset/matongatong.jpg";
+import ocho from "../../../../../Asset/occhooccho.jpg";
+import nuocchanh from "../../../../../Asset/lemon.jpg";
+import nuocepxoai from "../../../../../Asset/nuocepxoai.jpg";
+import khoaitaydo from "../../../../../Asset/khoaitaydo.jpg";
+import bittetnuong from "../../../../../Asset/bittetnuong.jpg";
+import salad from "../../../../../Asset/saladalad.jpg";
+
 import "antd/dist/antd.css";
 import { Button, Checkbox } from "antd";
 import Food3 from "../Food3";
@@ -52,31 +65,28 @@ const Food2 = () => {
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={Img1}
+                    src={suangucoc}
                     alt="food1"
                   />
                   <TitleContent>
-                    <div> mon an 1</div>
-                    <div> mota 1</div>
-                    <div> mota 1</div>
-                    <div> mota 1</div>
+                    <div> 2 cốc sữa ngũ cốc nguyên hạt</div>
                   </TitleContent>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={Img1}
+                    src={suaitbeo}
                     alt="food1"
                   />
-                  <div> mon an 1</div>
+                  <div>1 cốc sữa ít béo</div>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={Img1}
+                    src={vietquat}
                     alt="food1"
                   />
-                  <div> mon an 1</div>
+                  <div> 3/4 cốc nước việt quất</div>
                 </Content1>
               </ContainContent>
             </Morning>
@@ -91,31 +101,36 @@ const Food2 = () => {
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={Img1}
+                    src={phomat}
                     alt="food1"
                   />
                   <TitleContent>
-                    <div> mon an 1</div>
-                    <div> mota 1</div>
-                    <div> mota 1</div>
-                    <div> mota 1</div>
+                    <div> Nửa bát pho mát</div>
                   </TitleContent>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={Img1}
+                    src={matong}
                     alt="food1"
                   />
-                  <div> mon an 1</div>
+                  <div>3 muỗng mật ong</div>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={Img1}
+                    src={ocho}
                     alt="food1"
                   />
-                  <div> mon an 1</div>
+                  <div> 1/4 bát hạt óc chó</div>
+                </Content1>
+                <Content1>
+                  <img
+                    style={{ width: "50%", height: "50%", marginRight: "50px" }}
+                    src={nuocchanh}
+                    alt="food1"
+                  />
+                  <div> 1 cốc nước chanh</div>
                 </Content1>
               </ContainContent>
             </Morning>
@@ -130,31 +145,28 @@ const Food2 = () => {
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={Img1}
+                    src={ngucoc}
                     alt="food1"
                   />
                   <TitleContent>
-                    <div> mon an 1</div>
-                    <div> mota 1</div>
-                    <div> mota 1</div>
-                    <div> mota 1</div>
+                    <div> 2 thanh ngũ cốc</div>
                   </TitleContent>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={Img1}
+                    src={nuocepxoai}
                     alt="food1"
                   />
-                  <div> mon an 1</div>
+                  <div>1/2 cốc nước ép xoài</div>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={Img1}
+                    src={khoaitaydo}
                     alt="food1"
                   />
-                  <div> mon an 1</div>
+                  <div> 100g khoai tây đỏ</div>
                 </Content1>
               </ContainContent>
             </Morning>
@@ -169,31 +181,28 @@ const Food2 = () => {
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={Img1}
+                    src={bittetnuong}
                     alt="food1"
                   />
                   <TitleContent>
-                    <div> mon an 1</div>
-                    <div> mota 1</div>
-                    <div> mota 1</div>
-                    <div> mota 1</div>
+                    <div>130g bít tết nướng</div>
                   </TitleContent>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={Img1}
+                    src={salad}
                     alt="food1"
                   />
-                  <div> mon an 1</div>
+                  <div>1 bát salad</div>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={Img1}
+                    src={suaitbeo}
                     alt="food1"
                   />
-                  <div> mon an 1</div>
+                  <div> 1 cốc sữa ít béo</div>
                 </Content1>
               </ContainContent>
             </Morning>
