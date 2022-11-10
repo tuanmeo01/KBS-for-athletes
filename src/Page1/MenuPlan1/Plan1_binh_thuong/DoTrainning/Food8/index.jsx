@@ -16,7 +16,8 @@ import sua from "../../../../../Asset/suaitbeo.jpg";
 import "antd/dist/antd.css";
 import { Button, Checkbox } from "antd";
 import Food2 from "../Food2";
-const Food7 = () => {
+import Food9 from "../Food9";
+const Food8 = () => {
   const [checked1, setChecked1] = useState(false);
   const [checked2, setChecked2] = useState(false);
   const [checked3, setChecked3] = useState(false);
@@ -46,12 +47,12 @@ const Food7 = () => {
   const label4 = `${checked4 ? "Đã hoàn thành" : "Chưa hoàn thành"}`;
   return (
     <>
-      {localStorage.setItem("days", "7")}
+      {localStorage.setItem("days", "8")}
       {finishDay1 ? (
-        <Food2 />
+        <Food9 />
       ) : (
         <div>
-          <h2>Ngày 7</h2>
+          <h2>Ngày 8</h2>
           <ContainFood>
             <Morning>
               <ContainTitle>
@@ -65,7 +66,7 @@ const Food7 = () => {
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
                     src={banana}
-                    alt="food1"
+                    alt="food8"
                   />
                   <TitleContent>
                     <div> 1 quả chuối chín</div>
@@ -75,7 +76,7 @@ const Food7 = () => {
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
                     src={suayen}
-                    alt="food1"
+                    alt="food8"
                   />
                   <div> sữa yến mạch nấu chín</div>
                 </Content1>
@@ -83,7 +84,7 @@ const Food7 = () => {
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
                     src={nhokho}
-                    alt="food1"
+                    alt="food8"
                   />
                   <div> 2 muỗng nho khô</div>
                 </Content1>
@@ -101,7 +102,7 @@ const Food7 = () => {
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
                     src={sanwich}
-                    alt="food1"
+                    alt="food8"
                   />
                   <TitleContent>
                     <b>Sanwich gà </b>
@@ -114,7 +115,7 @@ const Food7 = () => {
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
                     src={taoxanh}
-                    alt="food1"
+                    alt="food8"
                   />
                   <div> 1 quả táo xanh</div>
                 </Content1>
@@ -122,7 +123,7 @@ const Food7 = () => {
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
                     src={banhquy}
-                    alt="food1"
+                    alt="food8"
                   />
                   <div> 2 miếng bánh quy + nửa cốc nước ép cà rốt</div>
                 </Content1>
@@ -140,7 +141,7 @@ const Food7 = () => {
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
                     src={ngucoc}
-                    alt="food1"
+                    alt="food8"
                   />
                   <TitleContent>
                     <div> 2 Thanh ngũ cốc</div>
@@ -150,7 +151,7 @@ const Food7 = () => {
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
                     src={nuoccam}
-                    alt="food1"
+                    alt="food8"
                   />
                   <div>1 cốc nước cam</div>
                 </Content1>
@@ -158,7 +159,7 @@ const Food7 = () => {
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
                     src={Img1}
-                    alt="food1"
+                    alt="food8"
                   />
                   <div>Món tùy chọn</div>
                 </Content1>
@@ -176,7 +177,7 @@ const Food7 = () => {
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
                     src={ucga}
-                    alt="food1"
+                    alt="food8"
                   />
                   <TitleContent>
                     <div> 130g ức gà luộc</div>
@@ -186,7 +187,7 @@ const Food7 = () => {
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
                     src={khoailang}
-                    alt="food1"
+                    alt="food8"
                   />
                   <div>1 củ khoai lang nướng</div>
                 </Content1>
@@ -194,7 +195,7 @@ const Food7 = () => {
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
                     src={sua}
-                    alt="food1"
+                    alt="food8"
                   />
                   <div>1 cốc sữa ít béo</div>
                 </Content1>
@@ -263,4 +264,4 @@ const Content1 = styled.div`
   margin: 30px 30px;
 `;
 const TitleContent = styled.div``;
-export default Food7;
+export default Food8;

@@ -15,8 +15,8 @@ import sua from "../../../../../Asset/suaitbeo.jpg";
 
 import "antd/dist/antd.css";
 import { Button, Checkbox } from "antd";
-import Food2 from "../Food2";
-const Food7 = () => {
+import Food15 from "../Food15";
+const Food14 = () => {
   const [checked1, setChecked1] = useState(false);
   const [checked2, setChecked2] = useState(false);
   const [checked3, setChecked3] = useState(false);
@@ -46,12 +46,12 @@ const Food7 = () => {
   const label4 = `${checked4 ? "Đã hoàn thành" : "Chưa hoàn thành"}`;
   return (
     <>
-      {localStorage.setItem("days", "7")}
+      {localStorage.setItem("days", "14")}
       {finishDay1 ? (
-        <Food2 />
+        <Food15 />
       ) : (
         <div>
-          <h2>Ngày 7</h2>
+          <h2>Ngày 14</h2>
           <ContainFood>
             <Morning>
               <ContainTitle>
@@ -263,4 +263,4 @@ const Content1 = styled.div`
   margin: 30px 30px;
 `;
 const TitleContent = styled.div``;
-export default Food7;
+export default Food14;

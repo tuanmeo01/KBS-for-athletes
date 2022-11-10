@@ -1,27 +1,14 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Img1 from "../../../../../Asset/img.jpg";
-import banana from "../../../../../Asset/banana.jpg";
-import suayen from "../../../../../Asset/yenmachyenmach.jpg";
-import nhokho from "../../../../../Asset/nhokho.jpg";
-import sanwich from "../../../../../Asset/sanwichga.jpg";
-import taoxanh from "../../../../../Asset/taoxanh.jpg";
-import banhquy from "../../../../../Asset/cookieookie.jpg";
-import ngucoc from "../../../../../Asset/ngucocngucoc.jpg";
-import nuoccam from "../../../../../Asset/nuoccam.jpg";
-import ucga from "../../../../../Asset/ucga.jpg";
-import khoailang from "../../../../../Asset/khoailang.jpg";
-import sua from "../../../../../Asset/suaitbeo.jpg";
-
 import "antd/dist/antd.css";
 import { Button, Checkbox } from "antd";
-import Food2 from "../Food2";
-const Food7 = () => {
+const Food3 = () => {
   const [checked1, setChecked1] = useState(false);
   const [checked2, setChecked2] = useState(false);
   const [checked3, setChecked3] = useState(false);
   const [checked4, setChecked4] = useState(false);
-  const [finishDay1, setFinishDay1] = useState(false);
+  const [finishDay3, setFinishDay3] = useState(false);
   const toggleChecked = () => {
     setChecked1(!checked1);
     setChecked2(!checked2);
@@ -46,12 +33,14 @@ const Food7 = () => {
   const label4 = `${checked4 ? "Đã hoàn thành" : "Chưa hoàn thành"}`;
   return (
     <>
-      {localStorage.setItem("days", "7")}
-      {finishDay1 ? (
-        <Food2 />
+      {localStorage.setItem("days", "2")}
+      {finishDay3 ? (
+        {
+          /* <Food4 /> */
+        }
       ) : (
         <div>
-          <h2>Ngày 7</h2>
+          <h2>Ngày 3</h2>
           <ContainFood>
             <Morning>
               <ContainTitle>
@@ -64,28 +53,31 @@ const Food7 = () => {
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={banana}
+                    src={Img1}
                     alt="food1"
                   />
                   <TitleContent>
-                    <div> 1 quả chuối chín</div>
+                    <div> mon an 1</div>
+                    <div> mota 1</div>
+                    <div> mota 1</div>
+                    <div> mota 1</div>
                   </TitleContent>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={suayen}
+                    src={Img1}
                     alt="food1"
                   />
-                  <div> sữa yến mạch nấu chín</div>
+                  <div> mon an 1</div>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={nhokho}
+                    src={Img1}
                     alt="food1"
                   />
-                  <div> 2 muỗng nho khô</div>
+                  <div> mon an 1</div>
                 </Content1>
               </ContainContent>
             </Morning>
@@ -100,31 +92,31 @@ const Food7 = () => {
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={sanwich}
+                    src={Img1}
                     alt="food1"
                   />
                   <TitleContent>
-                    <b>Sanwich gà </b>
-                    <div> 4 lát gà hấp bia </div>
-                    <div> 2 lát bánh mì nguyên hạt</div>
-                    <div> 1 thìa mù tạt+ 2 lát cà chua</div>
+                    <div> mon an 1</div>
+                    <div> mota 1</div>
+                    <div> mota 1</div>
+                    <div> mota 1</div>
                   </TitleContent>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={taoxanh}
+                    src={Img1}
                     alt="food1"
                   />
-                  <div> 1 quả táo xanh</div>
+                  <div> mon an 1</div>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={banhquy}
+                    src={Img1}
                     alt="food1"
                   />
-                  <div> 2 miếng bánh quy + nửa cốc nước ép cà rốt</div>
+                  <div> mon an 1</div>
                 </Content1>
               </ContainContent>
             </Morning>
@@ -139,20 +131,15 @@ const Food7 = () => {
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={ngucoc}
+                    src={Img1}
                     alt="food1"
                   />
                   <TitleContent>
-                    <div> 2 Thanh ngũ cốc</div>
+                    <div> mon an 1</div>
+                    <div> mota 1</div>
+                    <div> mota 1</div>
+                    <div> mota 1</div>
                   </TitleContent>
-                </Content1>
-                <Content1>
-                  <img
-                    style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={nuoccam}
-                    alt="food1"
-                  />
-                  <div>1 cốc nước cam</div>
                 </Content1>
                 <Content1>
                   <img
@@ -160,7 +147,15 @@ const Food7 = () => {
                     src={Img1}
                     alt="food1"
                   />
-                  <div>Món tùy chọn</div>
+                  <div> mon an 1</div>
+                </Content1>
+                <Content1>
+                  <img
+                    style={{ width: "50%", height: "50%", marginRight: "50px" }}
+                    src={Img1}
+                    alt="food1"
+                  />
+                  <div> mon an 1</div>
                 </Content1>
               </ContainContent>
             </Morning>
@@ -175,28 +170,31 @@ const Food7 = () => {
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={ucga}
+                    src={Img1}
                     alt="food1"
                   />
                   <TitleContent>
-                    <div> 130g ức gà luộc</div>
+                    <div> mon an 1</div>
+                    <div> mota 1</div>
+                    <div> mota 1</div>
+                    <div> mota 1</div>
                   </TitleContent>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={khoailang}
+                    src={Img1}
                     alt="food1"
                   />
-                  <div>1 củ khoai lang nướng</div>
+                  <div> mon an 1</div>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={sua}
+                    src={Img1}
                     alt="food1"
                   />
-                  <div>1 cốc sữa ít béo</div>
+                  <div> mon an 1</div>
                 </Content1>
               </ContainContent>
             </Morning>
@@ -208,7 +206,7 @@ const Food7 = () => {
                 justifyContent: "end",
               }}
             >
-              <BtnFood onClick={() => setFinishDay1(true)}>
+              <BtnFood onClick={() => setFinishDay3(true)}>
                 Ngày tiếp theo
               </BtnFood>
             </div>
@@ -241,7 +239,7 @@ const ContainFood = styled.div`
 `;
 const BtnFood = styled.div`
   height: 50px;
-  width: 150px;
+  width: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -260,7 +258,7 @@ const ContainTitle = styled.div``;
 const ContainContent = styled.div``;
 const Content1 = styled.div`
   display: flex;
-  margin: 30px 30px;
+  margin: 50px;
 `;
 const TitleContent = styled.div``;
-export default Food7;
+export default Food3;
