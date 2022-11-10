@@ -1,4 +1,5 @@
 import React from "react";
+import "../../../../components/index.css";
 import styled from "styled-components";
 import Icon_back from "../../../../Asset/arrow-narrow-left.svg";
 import Food1 from "./Food1";

@@ -4,6 +4,7 @@ import Plan1_gay from "./Plan1_Gay";
 import Plan1Normal from "./Plan1_binh_thuong";
 import Plan1Beo from "./Plan1_beo";
 import Icon_back from "../../Asset/arrow-narrow-left.svg";
+import "../../components/index.css";
 
 const MenuPlan1 = (props) => {
   const weight = props.weight;
@@ -22,7 +23,7 @@ const MenuPlan1 = (props) => {
       ) : plan3 ? (
         <Plan1Beo />
       ) : (
-        <ContainMenu>
+        <ContainMenu className=" slide-in-blurred-top">
           <Title>
             <img
               style={{ cursor: "pointer" }}

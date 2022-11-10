@@ -31,6 +31,8 @@ import Food6 from "./Food6";
 import Food7 from "./Food7";
 import Food8 from "./Food8";
 import Food9 from "./Food9";
+import "../../../../components/index.css";
+
 const DoTrainning = (props) => {
   const days = localStorage.getItem("days");
   const renderSwitch = (days) => {

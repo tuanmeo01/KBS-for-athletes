@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Page1 from "../Page1";
 import Page2 from "../Page2";
 import Page3 from "../Page3";
+
 const HomePage = () => {
   const [clickType, setClickType] = useState("0");
   console.log(clickType);
@@ -17,6 +18,7 @@ const HomePage = () => {
       ) : (
         <ContainHomePage>
           <h2
+            className="tracking-in-expand-fwd"
             style={{
               fontSize: "21px !important",
               textAlign: "center",
@@ -27,9 +29,13 @@ const HomePage = () => {
             điền kinh
           </h2>
           <ContainOption>
-            <Form onClick={() => setClickType("1")}>Người mới bắt đầu</Form>
-            <Form onClick={() => setClickType("2")}>Người tập bán chuyên</Form>
-            <Form onClick={() => setClickType("3")}>
+            <Form className="bounce-top" onClick={() => setClickType("1")}>
+              Người mới bắt đầu
+            </Form>
+            <Form className="bounce-top" onClick={() => setClickType("2")}>
+              Người tập bán chuyên
+            </Form>
+            <Form className="bounce-top" onClick={() => setClickType("3")}>
               Vận động viên chuyên nghiệp
             </Form>
           </ContainOption>
@@ -40,6 +46,7 @@ const HomePage = () => {
 };
 
 const ContainHomePage = styled.div`
+  padding: 50px;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -65,6 +72,7 @@ const Form = styled.div`
   text-align: center;
   color: white;
   cursor: pointer;
+
   &:hover {
     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
     background: #9b2259;

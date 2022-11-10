@@ -6,6 +6,7 @@ import "antd/lib/radio/radio";
 import MenuPlan1 from "./MenuPlan1/index";
 import { Radio } from "antd";
 import Icon_back from "../Asset/arrow-narrow-left.svg";
+import "../components/index.css";
 
 const Page1 = (props: any) => {
   const [onClickSubmit, setOnClickSubmit] = useState(false);
@@ -27,7 +28,7 @@ const Page1 = (props: any) => {
           setOnClickSubmit={setOnClickSubmit}
         />
       ) : (
-        <ContainPage1>
+        <ContainPage1 className="slide-in-blurred-top">
           <img
             style={{ cursor: "pointer" }}
             src={Icon_back}

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Icon_back from "../../../Asset/arrow-narrow-left.svg";
 import DoTrainning from "./DoTrainning";
 import DontTrainning from "./DontTrainning";
+import "../../../components/index.css";
 
 const Plan1_gay = (props: any) => {
   const [doTrainning, setDoTrainning] = useState(false);
@@ -14,7 +15,7 @@ const Plan1_gay = (props: any) => {
       ) : dontTrainning ? (
         <DontTrainning setDontTrainning={setDontTrainning} />
       ) : (
-        <ContainPlan1>
+        <ContainPlan1 className=" slide-in-blurred-top">
           <img
             style={{ cursor: "pointer" }}
             src={Icon_back}
