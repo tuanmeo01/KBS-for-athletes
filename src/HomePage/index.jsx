@@ -1,20 +1,30 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Page1 from "../Page1";
-import Page2 from "../Page2";
-import Page3 from "../Page3";
+import ChonMonTap from "./ChonMonTap/index.";
 
 const HomePage = () => {
   const [clickType, setClickType] = useState("0");
   console.log(clickType);
+  const selectType1 = () => {
+    setClickType("1");
+    localStorage.setItem("type", "Page1");
+  };
+  const selectType2 = () => {
+    setClickType("2");
+    localStorage.setItem("type", "Page2");
+  };
+  const selectType3 = () => {
+    setClickType("3");
+    localStorage.setItem("type", "Page3");
+  };
   return (
     <>
       {clickType === "1" ? (
-        <Page1 setClickType={setClickType} />
+        <ChonMonTap setClickType={setClickType} />
       ) : clickType === "2" ? (
-        <Page2 setClickType={setClickType} />
+        <ChonMonTap setClickType={setClickType} />
       ) : clickType === "3" ? (
-        <Page3 setClickType={setClickType} />
+        <ChonMonTap setClickType={setClickType} />
       ) : (
         <ContainHomePage>
           <h2
@@ -29,13 +39,13 @@ const HomePage = () => {
             điền kinh
           </h2>
           <ContainOption>
-            <Form className="bounce-top" onClick={() => setClickType("1")}>
+            <Form className="bounce-top" onClick={selectType1}>
               Người mới bắt đầu
             </Form>
-            <Form className="bounce-top" onClick={() => setClickType("2")}>
+            <Form className="bounce-top" onClick={selectType2}>
               Người tập bán chuyên
             </Form>
-            <Form className="bounce-top" onClick={() => setClickType("3")}>
+            <Form className="bounce-top" onClick={selectType3}>
               Vận động viên chuyên nghiệp
             </Form>
           </ContainOption>

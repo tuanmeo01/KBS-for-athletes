@@ -8,7 +8,7 @@ import { Radio } from "antd";
 import Icon_back from "../Asset/arrow-narrow-left.svg";
 import "../components/index.css";
 
-const Page1 = (props: any) => {
+const Page1 = (props) => {
   const [onClickSubmit, setOnClickSubmit] = useState(false);
   const [height, setHeight] = useState("");
   const [weight, setWeight] = useState("");
@@ -36,6 +36,7 @@ const Page1 = (props: any) => {
             onClick={() => props.setClickType("0")}
           ></img>
           <h2>Người mới bắt đầu</h2>
+          <h2>{props.subject}</h2>
           <ContainOption>
             <Option>
               Chiều cao(cm)

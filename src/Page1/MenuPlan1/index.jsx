@@ -43,15 +43,15 @@ const MenuPlan1 = (props) => {
                     Phân tích từ cơ thể bạn:
                     <li>
                       Lượng Carbohydrates cần thiết cho cơ thể bạn là :{" "}
-                      {10 * weight}g 7-10g/kg/ngày
+                      {10 * weight}g 10g/kg/ngày
                     </li>
                     <li>
                       Lượng Protein cần thiết cho cơ thể bạn là : {2 * weight}g
-                      1.2-2g/kg/ngày
+                      2g/kg/ngày
                     </li>
                     <li>
                       Lượng chất béo (Fats) cần thiết cho cơ thể bạn là :
-                      67g/ngày (Không quá 30% năng lượng)
+                      {0.4 * weight}g/ngày (Không quá 30% năng lượng)
                     </li>
                     <li>
                       Hidrat hóa và chất điện giải : bạn có thể mất 6-10% trọng

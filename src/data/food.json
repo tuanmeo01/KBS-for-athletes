@@ -1,0 +1,215 @@
+{
+  "nguoimoibatdau": {
+    "title": "Người mới bắt đầu",
+    "mon": {
+      "chay": {
+        "day1": {
+          "buasang": {
+            "mon1": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+            },
+            "mon2": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            },
+            "mon3": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            },
+            "mon4": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            }
+          },
+          "buatrua": {
+            "mon1": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            },
+            "mon2": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            },
+            "mon3": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            },
+            "mon4": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            }
+          },
+          "buatoi": {
+            "mon1": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            },
+            "mon2": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            },
+            "mon3": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            },
+            "mon4": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            }
+          }
+        },
+        "day2": {
+          "buasang": {
+            "mon1": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            },
+            "mon2": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            },
+            "mon3": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            },
+            "mon4": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            }
+          },
+          "buatrua": {
+            "mon1": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            },
+            "mon2": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            },
+            "mon3": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            },
+            "mon4": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            }
+          },
+          "buatoi": {
+            "mon1": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            },
+            "mon2": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            },
+            "mon3": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            },
+            "mon4": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            }
+          }
+        }
+      },
+      "nemlao": {
+        "day1": {
+          "buasang": {
+            "mon1": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            },
+            "mon2": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            },
+            "mon3": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            },
+            "mon4": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            }
+          },
+          "buatrua": {
+            "mon1": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            },
+            "mon2": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            },
+            "mon3": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            },
+            "mon4": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            }
+          },
+          "buatoi": {
+            "mon1": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            },
+            "mon2": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            },
+            "mon3": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            },
+            "mon4": {
+              "title": "tên món ăn 1",
+              "des": "mô tả món ăn",
+              "img": "link ảnh món ăn"
+            }
+          }
+        }
+      }
+    }
+  }
+}
