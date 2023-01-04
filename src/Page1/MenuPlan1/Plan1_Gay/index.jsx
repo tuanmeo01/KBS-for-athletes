@@ -20,7 +20,7 @@ const Plan1_gay = (props) => {
             style={{ cursor: "pointer" }}
             src={Icon_back}
             alt="backIcon"
-            // onClick={() => props.setOnClickSubmit(false)}
+            onClick={() => props.setPlan1(false)}
           ></img>
           <ContainOption>
             <h2>Hôm nay bạn có đi tập luyện không</h2>

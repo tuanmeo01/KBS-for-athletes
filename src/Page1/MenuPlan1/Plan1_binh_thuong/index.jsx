@@ -4,7 +4,7 @@ import Icon_back from "../../../Asset/arrow-narrow-left.svg";
 import DoTrainning from "./DoTrainning";
 import DontTrainning from "./DontTrainning";
 
-const Plan1Normal = (props: any) => {
+const Plan1Normal = (props) => {
   const [doTrainning, setDoTrainning] = useState(false);
   const [dontTrainning, setDontTrainning] = useState(false);
   return (
@@ -19,7 +19,7 @@ const Plan1Normal = (props: any) => {
             style={{ cursor: "pointer" }}
             src={Icon_back}
             alt="backIcon"
-            // onClick={() => props.setOnClickSubmit(false)}
+            onClick={() => props.setPlan2(false)}
           ></img>
           <ContainOption>
             <h2>Hôm nay bạn có đi tập luyện không</h2>

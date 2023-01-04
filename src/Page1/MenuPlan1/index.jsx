@@ -17,11 +17,11 @@ const MenuPlan1 = (props) => {
   return (
     <>
       {plan1 ? (
-        <Plan1_gay />
+        <Plan1_gay setPlan1={setPlan1} />
       ) : plan2 ? (
-        <Plan1Normal />
+        <Plan1Normal setPlan2={setPlan2} />
       ) : plan3 ? (
-        <Plan1Beo />
+        <Plan1Beo setPlan3={setPlan3} />
       ) : (
         <ContainMenu className=" slide-in-blurred-top">
           <Title>
