@@ -1,27 +1,13 @@
-# TÌM ẢNH MÓN ĂN Ở FREEPIK
+<h2>Hệ thống tư vấn đồ ăn cho người tập điền kinh theo từng thời điểm và giai đoạn</h2>
+<p>Thành viên</p>
+<p>Nguyễn Văn Tuấn</p>
+<p>Lê Thị Minh Hiền</p>
+<h2>Giảng viên
+#Nguyễn Đình Hóa
 
-# CÁC MÓN ĂN THAM KHẢO TRONG 2 ẢNH DƯỚI
+<h2>Phân chia công việc
+Nguyễn Văn Tuấn : Làm báo cáo, code dự án.
+Lê Thị Minh Hiền : Chỉnh sửa, format báo cáo.
 
-# CHIA VIỆC
-
-PAGE 1 TUẤN
-PAGE 2 HẢO
-PAGE 3 HIỀN
-
-# của ai làm nhánh của người đấy, k sờ vào code của người nhánh khác tránh conflict
-
-# git clone về git checkout tên_nhánh
-
-# CÀI NODEJS
-
-# CÀI NPM
-
-# KHI CLONE CODE VỀ THÌ CHẠY LỆNH TRONG TERMINAL BẰNG CÁCH CTRL ` NPM INSTALL
-
-# CHẠY FILE CODE: NPM START
-
-# code xong thì git add .
-
-# git commit -m 'nội dung phần đẩy lên'
-
-# git push origin tên_nhánh
+#Môi trường yêu cầu
+Npm,antdesign,nodeJs,ReactJs
