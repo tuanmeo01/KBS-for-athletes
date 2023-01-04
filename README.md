@@ -5,9 +5,9 @@
 <h2>Giảng viên
 #Nguyễn Đình Hóa
 
-<h2>Phân chia công việc
-Nguyễn Văn Tuấn : Làm báo cáo, code dự án.
+<h2>Phân chia công việc</h2>
+Nguyễn Văn Tuấn : Làm báo cáo, code dự án. <br/>
 Lê Thị Minh Hiền : Chỉnh sửa, format báo cáo.
 
-#Môi trường yêu cầu
+#Môi trường yêu cầu <br/>
 Npm,antdesign,nodeJs,ReactJs
