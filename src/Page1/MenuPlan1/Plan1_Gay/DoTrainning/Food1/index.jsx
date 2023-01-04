@@ -12,6 +12,7 @@ import nuoccam from "../../../../../Asset/nuoccam.jpg";
 import ucga from "../../../../../Asset/ucga.jpg";
 import khoailang from "../../../../../Asset/khoailang.jpg";
 import sua from "../../../../../Asset/suaitbeo.jpg";
+import food from "../../../../../data/food.json";
 
 import "antd/dist/antd.css";
 import { Button, Checkbox } from "antd";
@@ -64,11 +65,20 @@ const Food1 = () => {
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={banana}
+                    src={
+                      food.nguoimoibatdau.mon[0].thetrang[0].trainning[0].day[0]
+                        .bua[0].monan[0].src
+                    }
                     alt="food1"
                   />
                   <TitleContent>
-                    <div> 1 quả chuối chín</div>
+                    <div>
+                      {" "}
+                      {
+                        food.nguoimoibatdau.mon[0].thetrang[0].trainning[0]
+                          .day[0].bua[0].monan[0].title
+                      }
+                    </div>
                   </TitleContent>
                 </Content1>
                 <Content1>

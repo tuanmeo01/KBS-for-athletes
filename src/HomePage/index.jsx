@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import ChonMonTap from "./ChonMonTap/index.";
-
+import food from "../data/food.json";
 const HomePage = () => {
   const [clickType, setClickType] = useState("0");
   console.log(clickType);
+  const endpoint = "food.nguoimoibatdau.mon.chay.gay";
   const selectType1 = () => {
     setClickType("1");
     localStorage.setItem("type", "Page1");
@@ -38,6 +39,9 @@ const HomePage = () => {
             Chào mừng đến với hệ thống tư vấn dinh dưỡng dành cho vận động viên
             điền kinh
           </h2>
+          {/* <img src={food.nguoimoibatdau.mon.chay.gay.day1.buasang.mon1.img} /> */}
+          {/* <div>{food.nguoimoibatdau.mon[0].title}</div>
+          <div>{food.nguoimoibatdau.mon[1].title}</div> */}
           <ContainOption>
             <Form className="bounce-top" onClick={selectType1}>
               Người mới bắt đầu
