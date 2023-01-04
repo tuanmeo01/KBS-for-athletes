@@ -1,20 +1,20 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Img1 from "../../../../../Asset/img.jpg";
-import ngucoc from "../../../../../Asset/ngucocngucoc.jpg";
-import suaitbeo from "../../../../../Asset/suaitbeo.jpg";
-import suangucoc from "../../../../../Asset/yenmachyenmach.jpg";
-import vietquat from "../../../../../Asset/vietquat.jpg";
-import phomat from "../../../../../Asset/cheese.jpg";
-import matong from "../../../../../Asset/matongatong.jpg";
-import ocho from "../../../../../Asset/occhooccho.jpg";
-import nuocchanh from "../../../../../Asset/lemon.jpg";
-import nuocepxoai from "../../../../../Asset/nuocepxoai.jpg";
-import khoaitaydo from "../../../../../Asset/khoaitaydo.jpg";
-import bittetnuong from "../../../../../Asset/bittetnuong.jpg";
-import salad from "../../../../../Asset/saladalad.jpg";
-
 import "antd/dist/antd.css";
+import egg from "../../../../../Asset/egg.jpg";
+import muttao from "../../../../../Asset/muttao.jpg";
+import suaitbeo from "../../../../../Asset/suaitbeo.jpg";
+import saladga from "../../../../../Asset/saladga.jpg";
+import rauchanvit from "../../../../../Asset/rauchanvit.jpg";
+import ga from "../../../../../Asset/thitga.jpg";
+import dauden from "../../../../../Asset/dauden.jpg";
+import banhmi from "../../../../../Asset/ngucocngucoc.jpg";
+import phomai from "../../../../../Asset/cheese.jpg";
+import cahoi from "../../../../../Asset/philecahoi.jpg";
+import gaolut from "../../../../../Asset/gaolut.jpg";
+import dua from "../../../../../Asset/dua.jpg";
+
 import { Button, Checkbox } from "antd";
 import Food3 from "../Food3";
 const Food2 = () => {
@@ -22,7 +22,7 @@ const Food2 = () => {
   const [checked2, setChecked2] = useState(false);
   const [checked3, setChecked3] = useState(false);
   const [checked4, setChecked4] = useState(false);
-  const [finishDay2, setFinishDay2] = useState(false);
+  const [finishDay3, setFinishDay3] = useState(false);
   const toggleChecked = () => {
     setChecked1(!checked1);
     setChecked2(!checked2);
@@ -48,7 +48,7 @@ const Food2 = () => {
   return (
     <>
       {localStorage.setItem("days", "2")}
-      {finishDay2 ? (
+      {finishDay3 ? (
         <Food3 />
       ) : (
         <div>
@@ -65,12 +65,20 @@ const Food2 = () => {
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={suangucoc}
+                    src={egg}
                     alt="food1"
                   />
                   <TitleContent>
-                    <div> 2 cốc sữa ngũ cốc nguyên hạt</div>
+                    <div>2 trứng</div>
                   </TitleContent>
+                </Content1>
+                <Content1>
+                  <img
+                    style={{ width: "50%", height: "50%", marginRight: "50px" }}
+                    src={muttao}
+                    alt="food1"
+                  />
+                  <div>2 thìa mứt táo</div>
                 </Content1>
                 <Content1>
                   <img
@@ -78,15 +86,7 @@ const Food2 = () => {
                     src={suaitbeo}
                     alt="food1"
                   />
-                  <div>1 cốc sữa ít béo</div>
-                </Content1>
-                <Content1>
-                  <img
-                    style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={vietquat}
-                    alt="food1"
-                  />
-                  <div> 3/4 cốc nước việt quất</div>
+                  <div> 1 cốc sữa ít béo</div>
                 </Content1>
               </ContainContent>
             </Morning>
@@ -101,36 +101,28 @@ const Food2 = () => {
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={phomat}
+                    src={saladga}
                     alt="food1"
                   />
                   <TitleContent>
-                    <div> Nửa bát pho mát</div>
+                    <b> Salad gà</b>
                   </TitleContent>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={matong}
+                    src={rauchanvit}
                     alt="food1"
                   />
-                  <div>3 muỗng mật ong</div>
+                  <div>1 mớ rau chân vịt</div>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={ocho}
+                    src={ga}
                     alt="food1"
                   />
-                  <div> 1/4 bát hạt óc chó</div>
-                </Content1>
-                <Content1>
-                  <img
-                    style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={nuocchanh}
-                    alt="food1"
-                  />
-                  <div> 1 cốc nước chanh</div>
+                  <div> 120g thịt gà nấu</div>
                 </Content1>
               </ContainContent>
             </Morning>
@@ -145,28 +137,28 @@ const Food2 = () => {
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={ngucoc}
+                    src={dauden}
                     alt="food1"
                   />
                   <TitleContent>
-                    <div> 2 thanh ngũ cốc</div>
+                    <div> 1/4 bát đậu đen</div>
                   </TitleContent>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={nuocepxoai}
+                    src={banhmi}
                     alt="food1"
                   />
-                  <div>1/2 cốc nước ép xoài</div>
+                  <div> 2 bánh lúa mì nguyên cám</div>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={khoaitaydo}
+                    src={phomai}
                     alt="food1"
                   />
-                  <div> 100g khoai tây đỏ</div>
+                  <div>2 muỗng phô mai ít béo</div>
                 </Content1>
               </ContainContent>
             </Morning>
@@ -181,28 +173,28 @@ const Food2 = () => {
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={bittetnuong}
+                    src={cahoi}
                     alt="food1"
                   />
                   <TitleContent>
-                    <div>130g bít tết nướng</div>
+                    <div> 130g cá hồi phi lê</div>
                   </TitleContent>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={salad}
+                    src={gaolut}
                     alt="food1"
                   />
-                  <div>1 bát salad</div>
+                  <div>1/2 bát gạo lức</div>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={suaitbeo}
+                    src={dua}
                     alt="food1"
                   />
-                  <div> 1 cốc sữa ít béo</div>
+                  <div>4 lát dứa</div>
                 </Content1>
               </ContainContent>
             </Morning>
@@ -214,7 +206,7 @@ const Food2 = () => {
                 justifyContent: "end",
               }}
             >
-              <BtnFood onClick={() => setFinishDay2(true)}>
+              <BtnFood onClick={() => setFinishDay3(true)}>
                 Ngày tiếp theo
               </BtnFood>
             </div>

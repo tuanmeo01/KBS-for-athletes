@@ -5,7 +5,7 @@ import DoTrainning from "./DoTrainning";
 import DontTrainning from "./DontTrainning";
 import "../../../components/index.css";
 
-const Plan1_gay = (props: any) => {
+const Plan1_gay = (props) => {
   const [doTrainning, setDoTrainning] = useState(false);
   const [dontTrainning, setDontTrainning] = useState(false);
   return (
