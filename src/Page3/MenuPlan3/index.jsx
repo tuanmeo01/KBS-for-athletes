@@ -5,7 +5,7 @@ import Plan3Normal from "./Plan3Normal";
 import Plan3Beo from "./Plan3Beo";
 import Icon_back from "../../Asset/arrow-narrow-left.svg";
 
-const MenuPlan3 = (props: any) => {
+const MenuPlan3 = (props) => {
   const weight = props.weight;
   const height = props.height / 100;
   const BMI = Math.round((weight / (height * height)) * 100) / 100;
@@ -33,7 +33,7 @@ const MenuPlan3 = (props: any) => {
             <h2>Chỉ số BMI hiện tại của bạn là: {BMI}</h2>
             {BMI <= 18.5 ? (
               <>
-                <div>Gay</div>
+                <div>Theo chỉ số BMI bạn đang có thể trạng gầy</div>
                 <Suggest>
                   <ul>
                     Phân tích từ cơ thể bạn:
@@ -55,10 +55,17 @@ const MenuPlan3 = (props: any) => {
                       ounces mỗi 15p tập luyện.
                     </li>
                     Lời khuyên dành cho bạn
-                    <li>loiwf khuyen 1</li>
-                    <li>loiwf khuyen 1</li>
-                    <li>loiwf khuyen 1</li>
-                    <li>loiwf khuyen 1</li>
+                    <li>
+                      Theo chỉ số BMI thì hiện bạn đang có thể trạng người gầy,
+                      bạn cần tăng cường luyện tập nhiều hơn,cung cấp lượng calo
+                      nạp vào nhiều hơn sử dụng
+                    </li>
+                    <li>
+                      Nạp năng lượng đầy đủ để có thể tập luyện và sinh hoạt
+                    </li>
+                    <li>Tránh ăn vặt </li>
+                    <li>Ăn nhiều rau xanh</li>
+                    <li>Hạn chế sử dụng bia rượu và thức khuya</li>
                   </ul>
                 </Suggest>
                 <BtnFood
@@ -71,11 +78,44 @@ const MenuPlan3 = (props: any) => {
               </>
             ) : BMI >= 30 ? (
               <>
-                <div>Beo</div>
-                <Suggest>loi khuyen</Suggest>
+                <div>Theo chỉ số BMI bạn đang có thể trạng béo</div>
+                <Suggest>
+                  <ul>
+                    Phân tích từ cơ thể bạn:
+                    <li>
+                      Lượng Carbohydrates cần thiết cho cơ thể bạn là :
+                      {5 * weight}g 7-10g/kg/ngày
+                    </li>
+                    <li>
+                      Lượng Protein cần thiết cho cơ thể bạn là : {1 * weight}g
+                      1.2-2g/kg/ngày
+                    </li>
+                    <li>
+                      Lượng chất béo (Fats) cần thiết cho cơ thể bạn là :
+                      45g/ngày (Không quá 30% năng lượng)
+                    </li>
+                    <li>
+                      Hidrat hóa và chất điện giải : bạn có thể mất 6-10% trọng
+                      lượng nước do việc dổ mồ hôi, nên bạn cần bổ sung đủ 4-6
+                      ounces mỗi 15p tập luyện.
+                    </li>
+                    Lời khuyên dành cho bạn
+                    <li>
+                      Theo chỉ số BMI thì hiện bạn đang có thể trạng người béo,
+                      bạn cần tăng cường luyện tập nhiều hơn,cung cấp lượng calo
+                      nạp vào ít hơn sử dụng
+                    </li>
+                    <li>
+                      Nạp năng lượng đầy đủ để có thể tập luyện và sinh hoạt
+                    </li>
+                    <li>Tránh ăn vặt </li>
+                    <li>Ăn nhiều rau xanh</li>
+                    <li>Hạn chế sử dụng bia rượu và thức khuya</li>
+                  </ul>
+                </Suggest>
                 <BtnFood
                   onClick={() => {
-                    setPlan3(true);
+                    setPlan1(true);
                   }}
                 >
                   Đi đến bữa ăn dành cho bạn
@@ -83,11 +123,44 @@ const MenuPlan3 = (props: any) => {
               </>
             ) : (
               <>
-                <div>Binh thuong</div>
-                <Suggest>loi khuyen</Suggest>
+                <div>Theo chỉ số BMI bạn đang có thể trạng bình thường</div>
+                <Suggest>
+                  <ul>
+                    Phân tích từ cơ thể bạn:
+                    <li>
+                      Lượng Carbohydrates cần thiết cho cơ thể bạn là :
+                      {8 * weight}g 7-10g/kg/ngày
+                    </li>
+                    <li>
+                      Lượng Protein cần thiết cho cơ thể bạn là : {2 * weight}g
+                      1.2-2g/kg/ngày
+                    </li>
+                    <li>
+                      Lượng chất béo (Fats) cần thiết cho cơ thể bạn là :
+                      65g/ngày (Không quá 30% năng lượng)
+                    </li>
+                    <li>
+                      Hidrat hóa và chất điện giải : bạn có thể mất 6-10% trọng
+                      lượng nước do việc dổ mồ hôi, nên bạn cần bổ sung đủ 4-6
+                      ounces mỗi 15p tập luyện.
+                    </li>
+                    Lời khuyên dành cho bạn
+                    <li>
+                      Theo chỉ số BMI thì hiện bạn đang có thể trạng bình
+                      thường, bạn cần giữ vững cường độ luyện tập,cung cấp lượng
+                      calo nạp vào bằng calo sử dụng
+                    </li>
+                    <li>
+                      Nạp năng lượng đầy đủ để có thể tập luyện và sinh hoạt
+                    </li>
+                    <li>Tránh ăn vặt </li>
+                    <li>Ăn nhiều rau xanh</li>
+                    <li>Hạn chế sử dụng bia rượu và thức khuya</li>
+                  </ul>
+                </Suggest>
                 <BtnFood
                   onClick={() => {
-                    setPlan2(true);
+                    setPlan1(true);
                   }}
                 >
                   Đi đến bữa ăn dành cho bạn

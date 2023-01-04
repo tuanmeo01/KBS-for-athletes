@@ -5,7 +5,7 @@ import Plan2Normal from "./Plan2Normal";
 import Plan2Beo from "./Plan2Beo";
 import Icon_back from "../../Asset/arrow-narrow-left.svg";
 
-const MenuPlan2 = (props: any) => {
+const MenuPlan2 = (props) => {
   const weight = props.weight;
   const height = props.height / 100;
   const BMI = Math.round((weight / (height * height)) * 100) / 100;
@@ -33,7 +33,9 @@ const MenuPlan2 = (props: any) => {
             <h2>Chỉ số BMI hiện tại của bạn là: {BMI}</h2>
             {BMI <= 18.5 ? (
               <>
-                <div>Gay</div>
+                <div>
+                  Theo chỉ số BMI tính được thì bạn đang có thể trạng gầy
+                </div>
                 <Suggest>
                   <ul>
                     Phân tích từ cơ thể bạn:
@@ -55,10 +57,17 @@ const MenuPlan2 = (props: any) => {
                       ounces mỗi 15p tập luyện.
                     </li>
                     Lời khuyên dành cho bạn
-                    <li>loiwf khuyen 1</li>
-                    <li>loiwf khuyen 1</li>
-                    <li>loiwf khuyen 1</li>
-                    <li>loiwf khuyen 1</li>
+                    <li>
+                      Theo chỉ số BMI thì hiện bạn đang có thể trạng người gầy,
+                      bạn cần tăng cường luyện tập nhiều hơn,cung cấp lượng calo
+                      nạp vào nhiều hơn sử dụng
+                    </li>
+                    <li>
+                      Nạp năng lượng đầy đủ để có thể tập luyện và sinh hoạt
+                    </li>
+                    <li>Tránh ăn vặt </li>
+                    <li>Ăn nhiều rau xanh</li>
+                    <li>Hạn chế sử dụng bia rượu và thức khuya</li>
                   </ul>
                 </Suggest>
                 <BtnFood
@@ -71,7 +80,7 @@ const MenuPlan2 = (props: any) => {
               </>
             ) : BMI >= 30 ? (
               <>
-                <div>Beo</div>
+                <div>Bạn đang thuộc thể trạng béo</div>
                 <Suggest>
                   <ul>
                     Phân tích từ cơ thể bạn:
@@ -93,10 +102,17 @@ const MenuPlan2 = (props: any) => {
                       ounces mỗi 15p tập luyện.
                     </li>
                     Lời khuyên dành cho bạn
-                    <li>loiwf khuyen 1</li>
-                    <li>loiwf khuyen 1</li>
-                    <li>loiwf khuyen 1</li>
-                    <li>loiwf khuyen 1</li>
+                    <li>
+                      Theo chỉ số BMI thì hiện bạn đang có thể trạng người béo,
+                      bạn cần tăng cường luyện tập nhiều hơn, tránh ăn những đồ
+                      ăn nhiều dầu mỡ
+                    </li>
+                    <li>
+                      Nạp năng lượng vừa đủ để có thể tập luyện và sinh hoạt
+                    </li>
+                    <li>Tránh ăn vặt </li>
+                    <li>Ăn nhiều rau xanh</li>
+                    <li>Hạn chế sử dụng bia rượu và thức khuya</li>
                   </ul>
                 </Suggest>
                 <BtnFood
@@ -109,7 +125,7 @@ const MenuPlan2 = (props: any) => {
               </>
             ) : (
               <>
-                <div>Binh thuong</div>
+                <div>Theo chỉ số BMI bạn đang có thể trạng bình thường</div>
                 <Suggest>
                   <ul>
                     Phân tích từ cơ thể bạn:
@@ -131,10 +147,17 @@ const MenuPlan2 = (props: any) => {
                       ounces mỗi 15p tập luyện.
                     </li>
                     Lời khuyên dành cho bạn
-                    <li>loiwf khuyen 1</li>
-                    <li>loiwf khuyen 1</li>
-                    <li>loiwf khuyen 1</li>
-                    <li>loiwf khuyen 1</li>
+                    <li>
+                      Theo chỉ số BMI thì hiện bạn đang có thể trạng bình
+                      thường, bạn cần duy trì cường luyện tập, tránh ăn những đồ
+                      ăn nhiều dầu mỡ
+                    </li>
+                    <li>
+                      Nạp năng lượng vừa đủ để có thể tập luyện và sinh hoạt
+                    </li>
+                    <li>Tránh ăn vặt </li>
+                    <li>Ăn nhiều rau xanh</li>
+                    <li>Hạn chế sử dụng bia rượu và thức khuya</li>
                   </ul>
                 </Suggest>
                 <BtnFood

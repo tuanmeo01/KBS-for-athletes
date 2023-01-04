@@ -7,7 +7,7 @@ import MenuPlan2 from "./MenuPlan2";
 import { Radio } from "antd";
 import Icon_back from "../Asset/arrow-narrow-left.svg";
 
-const Page2 = (props: any) => {
+const Page2 = (props) => {
   const [onClickSubmit, setOnClickSubmit] = useState(false);
   const [height, setHeight] = useState("");
   const [weight, setWeight] = useState("");
@@ -34,7 +34,8 @@ const Page2 = (props: any) => {
             alt="backIcon"
             onClick={() => props.setClickType("0")}
           ></img>
-          <h2>ban chuyên</h2>
+          <h2>Người tập bán chuyên</h2>
+          <h2>{props.subject}</h2>
           <ContainOption>
             <Option>
               Chiều cao
