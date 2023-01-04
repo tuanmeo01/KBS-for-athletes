@@ -4,7 +4,7 @@ import { Input } from "antd";
 import "antd/lib/input/Input";
 import "antd/lib/radio/radio";
 import MenuPlan1 from "./MenuPlan1/index";
-import { Radio } from "antd";
+import { Radio, Select } from "antd";
 import Icon_back from "../Asset/arrow-narrow-left.svg";
 import "../components/index.css";
 
@@ -69,6 +69,23 @@ const Page1 = (props) => {
                 value={age}
               />
             </Option>
+            <div>Lựa chọn giai đoạn</div>
+            <Select
+              defaultValue="daily"
+              style={{ width: 200, marginBottom: "50px" }}
+              options={[
+                {
+                  label: "Giai đoạn của bạn",
+                  options: [
+                    { label: "Hằng ngày", value: "daily" },
+                    { label: "Tăng tốc", value: "boost" },
+                    { label: "Giảm tốc", value: "unboost" },
+                    { label: "Phục hồi", value: "health" },
+                    { label: "Nghỉ ngơi", value: "rest" },
+                  ],
+                },
+              ]}
+            />
             {height && weight && setSex && age ? (
               <ButtonSubmit onClick={() => setOnClickSubmit(true)}>
                 Xong
