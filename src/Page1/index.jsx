@@ -1,12 +1,18 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Input } from "antd";
+import { Input, Form } from "antd";
 import "antd/lib/input/Input";
 import "antd/lib/radio/radio";
 import MenuPlan1 from "./MenuPlan1/index";
 import { Radio, Select } from "antd";
 import Icon_back from "../Asset/arrow-narrow-left.svg";
 import "../components/index.css";
+import { NumericFormat } from "react-number-format";
+const preventMinus = (e) => {
+  if (e.code === "Minus") {
+    e.preventDefault();
+  }
+};
 
 const Page1 = (props) => {
   const [onClickSubmit, setOnClickSubmit] = useState(false);
@@ -40,18 +46,30 @@ const Page1 = (props) => {
           <ContainOption>
             <Option>
               Chiều cao(cm)
-              <Input
-                placeholder="Nhập chiều cao"
+              <NumericFormat
+                placeholder="Nhập chiều cao >100"
                 onChange={(e) => setHeight(e.target.value)}
                 value={height}
+                allowNegative="false"
+                onKeyPress={preventMinus}
               />
             </Option>
             <Option>
               Cân nặng(kg)
-              <Input
-                placeholder="Nhập cân nặng"
+              <NumericFormat
+                placeholder="Nhập cân nặng >20"
                 onChange={(e) => setWeight(e.target.value)}
+                onKeyPress={preventMinus}
                 value={weight}
+              />
+            </Option>
+            <Option>
+              Tuổi
+              <NumericFormat
+                placeholder="Nhập tuổi >10"
+                onChange={(e) => setAge(e.target.value)}
+                onKeyPress={preventMinus}
+                value={age}
               />
             </Option>
             <Option style={{ width: "15%" }}>
@@ -67,16 +85,12 @@ const Page1 = (props) => {
                 </Radio>
               </Radio.Group>
             </Option>
-            <Option>
-              Tuổi
-              <Input
-                placeholder="Nhập tuổi của bạn"
-                onChange={(e) => setAge(e.target.value)}
-                value={age}
-              />
-            </Option>
+
             <div>Lựa chọn giai đoạn</div>
             <Select
+              onChange={(value) => {
+                localStorage.setItem("giaidoan", value);
+              }}
               defaultValue="daily"
               style={{ width: 200, marginBottom: "50px" }}
               options={[
@@ -92,7 +106,13 @@ const Page1 = (props) => {
                 },
               ]}
             ></Select>
-            {height && weight && setSex && age ? (
+            {height > 100 &&
+            height < 200 &&
+            weight > 20 &&
+            weight < 150 &&
+            setSex &&
+            age > 10 &&
+            age < 80 ? (
               <ButtonSubmit onClick={() => setOnClickSubmit(true)}>
                 Xong
               </ButtonSubmit>

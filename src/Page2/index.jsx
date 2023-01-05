@@ -6,6 +6,7 @@ import "antd/lib/radio/radio";
 import MenuPlan2 from "./MenuPlan2";
 import { Radio, Select } from "antd";
 import Icon_back from "../Asset/arrow-narrow-left.svg";
+import { NumericFormat } from "react-number-format";
 
 const Page2 = (props) => {
   const [onClickSubmit, setOnClickSubmit] = useState(false);
@@ -14,7 +15,11 @@ const Page2 = (props) => {
   const [sex, setSex] = useState("");
   const [age, setAge] = useState("");
   const [value, setValue] = useState("nam");
-
+  const preventMinus = (e) => {
+    if (e.code === "Minus") {
+      e.preventDefault();
+    }
+  };
   const onChange = (e) => {
     setValue(e.target.value);
   };
@@ -38,38 +43,52 @@ const Page2 = (props) => {
           <h2>{props.subject}</h2>
           <ContainOption>
             <Option>
-              Chiều cao
-              <Input
-                placeholder="Nhập chiều cao"
+              Chiều cao(cm)
+              <NumericFormat
+                placeholder="Nhập chiều cao >100"
                 onChange={(e) => setHeight(e.target.value)}
                 value={height}
+                allowNegative="false"
+                onKeyPress={preventMinus}
               />
             </Option>
             <Option>
-              Cân nặng
-              <Input
-                placeholder="Nhập cân nặng"
+              Cân nặng(kg)
+              <NumericFormat
+                placeholder="Nhập cân nặng >20"
                 onChange={(e) => setWeight(e.target.value)}
+                onKeyPress={preventMinus}
                 value={weight}
+              />
+            </Option>
+            <Option>
+              Tuổi
+              <NumericFormat
+                placeholder="Nhập tuổi >10"
+                onChange={(e) => setAge(e.target.value)}
+                onKeyPress={preventMinus}
+                value={age}
               />
             </Option>
             <Option style={{ width: "15%" }}>
               Giới tính
               <Radio.Group onChange={onChange} value={value}>
-                <Radio value={"nam"}>Nam</Radio>
-                <Radio value={"nu"}>Nữ</Radio>
+                <Radio value={"nam"}>
+                  {localStorage.setItem("gioitinh", value)}
+                  Nam
+                </Radio>
+                <Radio value={"nu"}>
+                  {localStorage.setItem("gioitinh", value)}
+                  Nữ
+                </Radio>
               </Radio.Group>
             </Option>
-            <Option>
-              Tuổi
-              <Input
-                placeholder="Nhập tuổi của bạn"
-                onChange={(e) => setAge(e.target.value)}
-                value={age}
-              />
-            </Option>
+
             <div>Lựa chọn giai đoạn</div>
             <Select
+              onChange={(value) => {
+                localStorage.setItem("giaidoan", value);
+              }}
               defaultValue="daily"
               style={{ width: 200, marginBottom: "50px" }}
               options={[
@@ -84,8 +103,14 @@ const Page2 = (props) => {
                   ],
                 },
               ]}
-            />
-            {height && weight && setSex && age ? (
+            ></Select>
+            {height > 100 &&
+            height < 200 &&
+            weight > 20 &&
+            weight < 150 &&
+            setSex &&
+            age > 10 &&
+            age < 80 ? (
               <ButtonSubmit onClick={() => setOnClickSubmit(true)}>
                 Xong
               </ButtonSubmit>

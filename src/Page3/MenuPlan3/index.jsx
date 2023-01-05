@@ -76,7 +76,7 @@ const MenuPlan3 = (props) => {
                   Đi đến bữa ăn dành cho bạn
                 </BtnFood>
               </>
-            ) : BMI >= 30 ? (
+            ) : BMI >= 25 ? (
               <>
                 <div>Theo chỉ số BMI bạn đang có thể trạng béo</div>
                 <Suggest>

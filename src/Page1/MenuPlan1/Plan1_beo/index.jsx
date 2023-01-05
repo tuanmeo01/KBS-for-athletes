@@ -7,6 +7,14 @@ import DontTrainning from "./DontTrainning";
 const Plan1Beo = (props) => {
   const [doTrainning, setDoTrainning] = useState(false);
   const [dontTrainning, setDontTrainning] = useState(false);
+  const dotrainning = () => {
+    setDoTrainning(true);
+    localStorage.setItem("trainning", "true");
+  };
+  const donttrainning = () => {
+    setDontTrainning(true);
+    localStorage.setItem("trainning", "false");
+  };
   return (
     <>
       {doTrainning ? (
@@ -24,8 +32,8 @@ const Plan1Beo = (props) => {
           <ContainOption>
             <h2>Hôm nay bạn có đi tập luyện không</h2>
             <ContainButton>
-              <BtnFood onClick={() => setDoTrainning(true)}>Có</BtnFood>
-              <BtnFood onClick={() => setDontTrainning(true)}>Không</BtnFood>
+              <BtnFood onClick={dotrainning}>Có</BtnFood>
+              <BtnFood onClick={donttrainning}>Không</BtnFood>
             </ContainButton>
           </ContainOption>
         </ContainPlan1>

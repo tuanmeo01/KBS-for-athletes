@@ -88,7 +88,7 @@ const MenuPlan1 = (props) => {
                   Đi đến bữa ăn dành cho bạn
                 </BtnFood>
               </>
-            ) : BMI >= 30 ? ( //beo
+            ) : BMI >= 25 ? ( //beo
               <>
                 {localStorage.setItem("thetrang", "beo")}
                 <div>
