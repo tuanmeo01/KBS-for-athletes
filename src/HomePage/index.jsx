@@ -8,15 +8,15 @@ const HomePage = () => {
   const endpoint = "food.nguoimoibatdau.mon.chay.gay";
   const selectType1 = () => {
     setClickType("1");
-    localStorage.setItem("type", "Page1");
+    localStorage.setItem("type", "Page1"); //Người mới bắt đầu
   };
   const selectType2 = () => {
     setClickType("2");
-    localStorage.setItem("type", "Page2");
+    localStorage.setItem("type", "Page2"); // Người tập bán chuyên
   };
   const selectType3 = () => {
     setClickType("3");
-    localStorage.setItem("type", "Page3");
+    localStorage.setItem("type", "Page3"); // Người tập  chuyên nghiệp
   };
   return (
     <>
@@ -39,9 +39,6 @@ const HomePage = () => {
             Chào mừng đến với hệ thống tư vấn dinh dưỡng dành cho vận động viên
             điền kinh
           </h2>
-          {/* <img src={food.nguoimoibatdau.mon.chay.gay.day1.buasang.mon1.img} /> */}
-          {/* <div>{food.nguoimoibatdau.mon[0].title}</div>
-          <div>{food.nguoimoibatdau.mon[1].title}</div> */}
           <ContainOption>
             <Form className="bounce-top" onClick={selectType1}>
               Người mới bắt đầu

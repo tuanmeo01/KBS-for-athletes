@@ -64,20 +64,12 @@ const Food1 = () => {
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={banana}
-                    alt="food1"
-                  />
-                  <TitleContent>
-                    <div> 1 quả chuối chín</div>
-                  </TitleContent>
-                </Content1>
-                <Content1>
-                  <img
-                    style={{ width: "50%", height: "50%", marginRight: "50px" }}
                     src={suayen}
                     alt="food1"
                   />
-                  <div> sữa yến mạch nấu chín</div>
+                  <TitleContent>
+                    <div> Sữa yến mạch</div>
+                  </TitleContent>
                 </Content1>
                 <Content1>
                   <img
@@ -85,7 +77,15 @@ const Food1 = () => {
                     src={nhokho}
                     alt="food1"
                   />
-                  <div> 2 muỗng nho khô</div>
+                  <div> 1 bát nho khô</div>
+                </Content1>
+                <Content1>
+                  <img
+                    style={{ width: "50%", height: "50%", marginRight: "50px" }}
+                    src={nuoccam}
+                    alt="food1"
+                  />
+                  <div>1 cốc nước cam</div>
                 </Content1>
               </ContainContent>
             </Morning>

@@ -7,8 +7,8 @@ import Icon_back from "../../Asset/arrow-narrow-left.svg";
 import "../../components/index.css";
 
 const MenuPlan1 = (props) => {
-  const weight = props.weight;
-  const height = props.height / 100;
+  const weight = props.weight; // cân nặng
+  const height = props.height / 100; // chiều cao
   const BMI = Math.round((weight / (height * height)) * 100) / 100;
   const [plan1, setPlan1] = useState(false);
   const [plan2, setPlan2] = useState(false);
@@ -34,6 +34,7 @@ const MenuPlan1 = (props) => {
             <h2>Chỉ số BMI hiện tại của bạn là: {BMI}</h2>
             {BMI <= 18.5 ? ( //gay
               <>
+                {localStorage.setItem("thetrang", "gay")}
                 <div>
                   Theo như chiều cao và cân nặng của bạn, chúng tôi đã tính ra
                   được BMI của bạn là {BMI}, bạn đang ở mức độ gầy
@@ -43,7 +44,8 @@ const MenuPlan1 = (props) => {
                     Phân tích từ cơ thể bạn:
                     <li>
                       Lượng Carbohydrates cần thiết cho cơ thể bạn là :{" "}
-                      {10 * weight}g 10g/kg/ngày
+                      {10 * weight}g 10g/kg/ngày{" "}
+                      {/* lượng carb người gầy cần nạp trong ngày */}
                     </li>
                     <li>
                       Lượng Protein cần thiết cho cơ thể bạn là : {2 * weight}g
@@ -88,6 +90,7 @@ const MenuPlan1 = (props) => {
               </>
             ) : BMI >= 30 ? ( //beo
               <>
+                {localStorage.setItem("thetrang", "beo")}
                 <div>
                   Theo chỉ số BMI của bạn là {BMI} thì bạn đang ở mức béo
                 </div>
@@ -103,8 +106,9 @@ const MenuPlan1 = (props) => {
                       g 1.2-2g/kg/ngày
                     </li>
                     <li>
-                      Lượng chất béo (Fats) cần thiết cho cơ thể bạn là :
-                      67g/ngày (Không quá 30% năng lượng)
+                      Lượng chất béo (Fats) cần thiết cho cơ thể bạn là :{" "}
+                      {0.2 * weight}
+                      /ngày (Không quá 30% năng lượng)
                     </li>
                     <li>
                       Hidrat hóa và chất điện giải : bạn có thể mất 6-10% trọng
@@ -136,6 +140,8 @@ const MenuPlan1 = (props) => {
             ) : (
               //binh thuong
               <>
+                {localStorage.setItem("thetrang", "binhthuong")}
+
                 <div>
                   Theo chỉ số BMI dựa trên chiều cao và cân nặng của bạn {BMI}{" "}
                   thì bạn đang có thể trạng bình thường

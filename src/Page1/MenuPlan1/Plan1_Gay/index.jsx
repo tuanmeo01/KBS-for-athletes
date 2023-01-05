@@ -8,6 +8,8 @@ import "../../../components/index.css";
 const Plan1_gay = (props) => {
   const [doTrainning, setDoTrainning] = useState(false);
   const [dontTrainning, setDontTrainning] = useState(false);
+
+  localStorage.setItem("trainning", "no");
   return (
     <>
       {doTrainning ? (
@@ -26,7 +28,9 @@ const Plan1_gay = (props) => {
             <h2>Hôm nay bạn có đi tập luyện không</h2>
             <ContainButton>
               <BtnFood onClick={() => setDoTrainning(true)}>Có</BtnFood>
+              {localStorage.setItem("trainning", "yes")}
               <BtnFood onClick={() => setDontTrainning(true)}>Không</BtnFood>
+              {localStorage.setItem("trainning", "no")}
             </ContainButton>
           </ContainOption>
         </ContainPlan1>

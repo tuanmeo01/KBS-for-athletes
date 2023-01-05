@@ -57,8 +57,14 @@ const Page1 = (props) => {
             <Option style={{ width: "15%" }}>
               Giới tính
               <Radio.Group onChange={onChange} value={value}>
-                <Radio value={"nam"}>Nam</Radio>
-                <Radio value={"nu"}>Nữ</Radio>
+                <Radio value={"nam"}>
+                  {localStorage.setItem("gioitinh", value)}
+                  Nam
+                </Radio>
+                <Radio value={"nu"}>
+                  {localStorage.setItem("gioitinh", value)}
+                  Nữ
+                </Radio>
               </Radio.Group>
             </Option>
             <Option>
@@ -85,7 +91,7 @@ const Page1 = (props) => {
                   ],
                 },
               ]}
-            />
+            ></Select>
             {height && weight && setSex && age ? (
               <ButtonSubmit onClick={() => setOnClickSubmit(true)}>
                 Xong

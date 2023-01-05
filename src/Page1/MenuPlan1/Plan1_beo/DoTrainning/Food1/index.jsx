@@ -64,28 +64,28 @@ const Food1 = () => {
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={banana}
+                    src={taoxanh}
                     alt="food1"
                   />
                   <TitleContent>
-                    <div> 1 quả chuối chín</div>
+                    <div> 1 quả táo xanh</div>
                   </TitleContent>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={suayen}
+                    src={banhquy}
                     alt="food1"
                   />
-                  <div> sữa yến mạch nấu chín</div>
+                  <div> 2 cái bánh quy</div>
                 </Content1>
                 <Content1>
                   <img
                     style={{ width: "50%", height: "50%", marginRight: "50px" }}
-                    src={nhokho}
+                    src={banana}
                     alt="food1"
                   />
-                  <div> 2 muỗng nho khô</div>
+                  <div> 1 quả chuối chín</div>
                 </Content1>
               </ContainContent>
             </Morning>

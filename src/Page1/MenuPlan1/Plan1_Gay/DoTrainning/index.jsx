@@ -48,7 +48,7 @@ const DoTrainning = (props) => {
       case "5":
         return <Food5 />;
       case "6":
-        return <Food5 />;
+        return <Food6 />;
       case "7":
         return <Food7 />;
       case "8":
